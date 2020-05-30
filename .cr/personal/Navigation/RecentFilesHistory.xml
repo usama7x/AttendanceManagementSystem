@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="DevExpress.CodeRush.Foundation.Navigation.QuickFileNav.SolutionFileInfosContainer">
+  <Options Language="Neutral">
+    <Items>
+      <Item Id="{4bdae979-5df5-47c0-a51b-64e7ec819a81}">
+        <Filename>Index.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\teachersubject\index.cshtml</FilePath>
+        <Folders>
+          <Item>Views</Item>
+          <Item>TeacherSubject</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{6844ba96-de36-47c4-98df-942082b6936c}">
+        <Filename>Subject.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\subject.cs</FilePath>
+        <Folders>
+          <Item>DomainObjects</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+      <Item Id="{494c39fc-aaea-4d9d-8198-a17561c8adc8}">
+        <Filename>Teacher.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
+        <Folders>
+          <Item>DomainObjects</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+      <Item Id="{f583b658-a239-40c1-a71a-64bbd65d3881}">
+        <Filename>Teacher.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
+        <Folders>
+          <Item>DomainObjects</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+      <Item Id="{a265b685-bc3c-451e-be5f-1d862f544732}">
+        <Filename>Teacher.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
+        <Folders>
+          <Item>DomainObjects</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+    </Items>
+  </Options>
+</Root>

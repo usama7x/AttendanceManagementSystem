@@ -1,0 +1,51 @@
+﻿@model AttendanceManagementSystem.Core.ViewModels.TeacherViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="post" asp-controller="Teacher" asp-action="Create">
+    <input type="text" placeholder="First Name" class="form-control" asp-for="Teacher.FirstName" />
+    <input type="text" placeholder="Last Name" class="form-control" asp-for="Teacher.LastName" />
+    <input type="email" placeholder="Email" class="form-control" asp-for="Teacher.Email" />
+    <input type="password" placeholder="Password" class="form-control" asp-for="Teacher.Password" />
+    <input type="submit" value="Add" class="form-control" />
+
+</form>
+
+<table class="table table-light">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher.Email)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Teachers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

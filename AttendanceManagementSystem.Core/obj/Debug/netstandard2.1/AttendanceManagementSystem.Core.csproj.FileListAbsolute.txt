@@ -1,0 +1,8 @@
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\bin\Debug\netstandard2.1\AttendanceManagementSystem.Core.deps.json
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\bin\Debug\netstandard2.1\AttendanceManagementSystem.Core.dll
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\obj\Debug\netstandard2.1\AttendanceManagementSystem.Core.csprojAssemblyReference.cache
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\obj\Debug\netstandard2.1\AttendanceManagementSystem.Core.AssemblyInfoInputs.cache
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\obj\Debug\netstandard2.1\AttendanceManagementSystem.Core.AssemblyInfo.cs
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\bin\Debug\netstandard2.1\AttendanceManagementSystem.Core.pdb
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\obj\Debug\netstandard2.1\AttendanceManagementSystem.Core.dll
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\obj\Debug\netstandard2.1\AttendanceManagementSystem.Core.pdb

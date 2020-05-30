@@ -1,0 +1,89 @@
+﻿@model IEnumerable<AttendanceManagementSystem.Core.ViewModels.StudentViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Students</h1>
+<form method="post" asp-controller="Student" asp-action="Create">
+    <div class="row">
+        <input class="form-control" type="text" placeholder="First Name" name="firstName" />
+        <input class="form-control" type="text" placeholder="Last Name" name="lastName" />
+        <input class="form-control" type="text" placeholder="Father Name" name="fatherName" />
+        <input class="form-control" type="number" placeholder="Roll No." name="rollNo" />
+        <input class="form-control" type="email" placeholder="Email" name="email" />
+        <input type="text" placeholder="City" class="form-control" name="city"/>
+        <input type="date" placeholder="Dob" name="dob" class="form-control" />
+        <select class="form-control" asp-items="@ViewBag.courses" name="Course"></select>
+        <input class="form-control" type="number" placeholder="Year" name="year" />
+        <input class="form-control" type="number" placeholder="Semester" name="semester" />
+        <input class="form-control" type="submit" value="Add" name="submit" />
+    </div>
+
+</form>
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RollNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>        
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RollNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FatherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

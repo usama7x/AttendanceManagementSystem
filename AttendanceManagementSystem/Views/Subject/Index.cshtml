@@ -1,0 +1,78 @@
+﻿@model AttendanceManagementSystem.Core.ViewModels.SubjectViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Subjects</h1>
+<form name="subjectForm" method="post" enctype="multipart/form-data" asp-controller="Subject" asp-action="Create">
+   
+    <select class="form-control" asp-for="Subject.CourseId" asp-items="@(new SelectList(Model.Courses,"CourseId","Name"))"></select>
+
+    
+    <select asp-for="Subject.Year" class="form-control">
+        <option value="0">Select Year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select>
+
+  
+    <select asp-for="Subject.Semester" class="form-control">
+        <option value="0">Select Semester</option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+        <option value="5">5th</option>
+        <option value="6">6th</option>
+        <option value="7">7th</option>
+        <option value="8">8th</option>
+    </select>
+    <input type="text" placeholder="Course Name" class="form-control" asp-for="Subject.Name" />
+    <input type="submit" value="Add Course" class="form-control" />
+</form>
+<table class="table table-light">
+    <thead>
+        <tr>
+          
+            <th>
+                @Html.DisplayNameFor(model => model.Subject.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject.Semester)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Subjects) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SubjectId">Edit</a> |             
+                <a asp-action="Delete" asp-route-id="@item.SubjectId" asp-controller="Subject">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
