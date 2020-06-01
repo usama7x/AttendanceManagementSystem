@@ -30,13 +30,20 @@ namespace AttendanceManagementSystem.Controllers
             return View(teacherView);
         }
 
+        [HttpPost]
         public async Task<IActionResult> CreateAsync(Teacher teacher)
         {
             teacher.UserName = teacher.Email;
             var result = await userManager.CreateAsync(teacher, teacher.Password);
             if (result.Succeeded)
-                RedirectToAction("Index");
-            return NotFound();
+            {
+                return RedirectToAction("Index");
+            } else
+            {
+                return NotFound();
+            }
+                
+           
 
 
 

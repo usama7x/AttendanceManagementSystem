@@ -51,7 +51,7 @@ namespace AttendanceManagementSystem
 
             services.ConfigureApplicationCookie(config =>
             {
-                config.Cookie.Name = "AMSd.Cookie";
+                config.Cookie.Name = "AMS.Cookie";
                 config.ExpireTimeSpan = TimeSpan.FromMinutes(5);
                 config.LoginPath = "/Account/Login";
                 config.LogoutPath = "/Account/Logout";
@@ -77,6 +77,8 @@ namespace AttendanceManagementSystem
 
             app.UseRouting();
 
+           
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
