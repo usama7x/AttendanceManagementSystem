@@ -20,5 +20,20 @@ namespace AttendanceManagementSystem.Controllers
             var course = context.Courses.ToList();
             return View(course);
         }
+        [HttpPost]
+        public IActionResult Create(string course)
+        {
+            context.Courses.Add(new Core.DomainObjects.Course() { Name = course });
+            context.SaveChanges();
+            return RedirectToActionPermanent("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var course = context.Courses.Find(id);
+            context.Courses.Remove(course);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
