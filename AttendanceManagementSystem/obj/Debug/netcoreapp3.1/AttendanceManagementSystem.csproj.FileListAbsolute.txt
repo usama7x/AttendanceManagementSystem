@@ -152,3 +152,7 @@ C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementS
 C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginView.cshtml.g.cs
 C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TeacherView.cshtml.g.cs
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\AttendanceHistory\CheckAttendance.cshtml.g.cs
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\AttendanceHistory\Index.cshtml.g.cs
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Attendance\CheckAttendance.cshtml.g.cs
+C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Attendance\Index.cshtml.g.cs

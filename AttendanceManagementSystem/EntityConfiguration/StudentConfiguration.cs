@@ -13,6 +13,7 @@ namespace AttendanceManagementSystem.EntityConfiguration
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.HasMany<Attendance>(a => a.Attendances).WithOne(s => s.Student).HasForeignKey(f => f.StudentId);
+            builder.HasMany<StudentSubject>(x => x.StudentSubjects).WithOne(x => x.Student).HasForeignKey(x => x.StudentId).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

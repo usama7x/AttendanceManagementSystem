@@ -20,6 +20,7 @@ namespace AttendanceManagementSystem.Data
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Teacher> Teachers { get; set; }        
         public DbSet<TeacherSubject> TeacherSubject { get; set; }
+        public DbSet<StudentSubject> StudentSubjects { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -28,7 +29,7 @@ namespace AttendanceManagementSystem.Data
             base.OnModelCreating(builder);
         }
 
-        public DbSet<AttendanceManagementSystem.Core.ViewModels.TeacherSubjectViewModel> TeacherSubjectViewModel { get; set; }
+      
 
     }
 
