@@ -22,5 +22,6 @@ namespace AttendanceManagementSystem.Core.DomainObjects
         public virtual ICollection<Attendance> Attendances { get; set; }
         public virtual ICollection<TeacherSubject> TeacherSubjects { get; set; }
         public virtual ICollection<CourseSubject> CourseSubjects { get; set; }
+        public virtual ICollection<StudentSubject> StudentSubjects { get; set; }
     }
 }

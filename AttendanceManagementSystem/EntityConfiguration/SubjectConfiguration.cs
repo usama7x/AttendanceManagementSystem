@@ -14,6 +14,7 @@ namespace AttendanceManagementSystem.EntityConfiguration
         {
             builder.HasMany<TeacherSubject>(x => x.TeacherSubjects).WithOne(x => x.Subject).HasForeignKey(x => x.SubjectId);
             builder.HasMany<CourseSubject>(x => x.CourseSubjects).WithOne(x => x.Subject).HasForeignKey(x => x.SubjectId).OnDelete(DeleteBehavior.NoAction);
+            builder.HasMany<StudentSubject>(x => x.StudentSubjects).WithOne(x => x.Subject).HasForeignKey(x => x.SubjectId).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

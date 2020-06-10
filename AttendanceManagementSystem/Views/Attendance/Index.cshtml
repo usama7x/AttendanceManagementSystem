@@ -1,0 +1,76 @@
+﻿@model AttendanceManagementSystem.Core.ViewModels.AttendanceViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_TeacherView";
+}
+    <h1>Mark Attendance</h1>
+<form name="attendanceForm" method="post" asp-controller="Attendance" asp-action="Index">
+    <select class="form-control" name="subjectId" asp-items="@(new SelectList(Model.Subjects,"SubjectId","Name"))"></select>
+    <input type="submit" value="Attendance Sheet" class="form-control" />
+</form>
+
+@using (Html.BeginForm("Create", "Attendance", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <input type="submit" value="Mark Attendance" class="form-control" />
+
+
+
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th>
+                
+                @Html.DisplayNameFor(model => model.Student.Name)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Student.RollNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student.IsAbsent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student.Reason)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Student.TotalAbsents)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (var item = 0; item < Model.Students.Count(); item++)
+        {
+            <tr>
+                @Html.HiddenFor(x => x.Students[item].Id)
+                @Html.HiddenFor(x => x.SubjectId)
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Students[item].RollNo)
+                    @Html.HiddenFor(x => x.Students[item].RollNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Students[item].Name)
+                    @Html.HiddenFor(x => x.Students[item].Name)
+                </td>
+                <td>
+                    @Html.RadioButtonFor(x => x.Students[item].IsAbsent, "false") Present
+                    @Html.RadioButtonFor(x => x.Students[item].IsAbsent, "true") Absent
+                    
+                </td>
+                <td>
+                    
+                    @*@Html.DisplayFor(modelItem => Model.Students[item].Reason)*@
+                    @Html.DropDownListFor(x => x.Students[item].Reason, new List<SelectListItem> { new SelectListItem {Text= "Sick", Value = "sick" },
+                                                                                                   new SelectListItem {Text = "Late", Value = "late" },
+                                                                                                   new SelectListItem {Text = "Leave", Value = "leave" } }, "Select Reason", new { })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Students[item].TotalAbsents)
+                    @Html.HiddenFor(x => x.Students[item].TotalAbsents)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}

@@ -23,6 +23,7 @@ namespace AttendanceManagementSystem.Core.DomainObjects
         public string Phone { get; set; }
         public string Email { get; set; }
         public virtual ICollection<Attendance> Attendances { get; set; }
+        public virtual ICollection<StudentSubject> StudentSubjects { get; set; }
 
 
 

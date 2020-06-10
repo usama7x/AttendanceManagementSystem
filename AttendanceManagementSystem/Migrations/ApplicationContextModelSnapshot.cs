@@ -41,11 +41,16 @@ namespace AttendanceManagementSystem.Migrations
                     b.Property<int>("SubjectId")
                         .HasColumnType("int");
 
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
                     b.HasKey("AttendanceId");
 
                     b.HasIndex("StudentId");
 
                     b.HasIndex("SubjectId");
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("Attendances");
                 });
@@ -142,6 +147,28 @@ namespace AttendanceManagementSystem.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("AttendanceManagementSystem.Core.DomainObjects.StudentSubject", b =>
+                {
+                    b.Property<int>("StudentSubjectId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("int");
+
+                    b.HasKey("StudentSubjectId");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("StudentSubjects");
                 });
 
             modelBuilder.Entity("AttendanceManagementSystem.Core.DomainObjects.Subject", b =>
@@ -462,6 +489,12 @@ namespace AttendanceManagementSystem.Migrations
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
+
+                    b.HasOne("AttendanceManagementSystem.Core.DomainObjects.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("AttendanceManagementSystem.Core.DomainObjects.CourseSubject", b =>
@@ -485,6 +518,21 @@ namespace AttendanceManagementSystem.Migrations
                         .WithMany("Students")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AttendanceManagementSystem.Core.DomainObjects.StudentSubject", b =>
+                {
+                    b.HasOne("AttendanceManagementSystem.Core.DomainObjects.Student", "Student")
+                        .WithMany("StudentSubjects")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("AttendanceManagementSystem.Core.DomainObjects.Subject", "Subject")
+                        .WithMany("StudentSubjects")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 

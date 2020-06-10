@@ -5,9 +5,12 @@
     }
     else if (@User.IsInRole("teacher"))
     {
-        //Layout = "_TeacherView";
-        Layout = "_Layout";
+        Layout = "_TeacherView";
+
     }
     else
+    {
         Layout = "_Layout";
+    }
+
 }
