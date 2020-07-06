@@ -7,6 +7,7 @@ namespace AttendanceManagementSystem.Core.ViewModels
 {
     public class StudentViewModel
     {
+        public int StudentId { get; set; }
         public int RollNo { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

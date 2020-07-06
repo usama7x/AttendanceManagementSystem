@@ -5,7 +5,11 @@
 }
 
 <h1>Courses</h1>
-
+@using (Html.BeginForm("Create", "Course"))
+{
+    <input type="text" class="form-control" placeholder="Course Name" name="course" />
+    <input type="submit" value="Add Course" class="form-control" />
+}
 
 <table class="table table-light">
     <thead>
@@ -24,9 +28,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
            
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CourseId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CourseId">Details</a> |
+            <td>              
                 <a asp-action="Delete" asp-route-id="@item.CourseId">Delete</a>
             </td>
         </tr>

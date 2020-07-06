@@ -24,6 +24,7 @@ namespace AttendanceManagementSystem.Controllers
             var students = context.Students.ToList();
             var studentView = students.Select(x => new StudentViewModel()
             {
+                StudentId = x.StudentId,
                 FirstName = x.FirstName,
                 LastName = x.LastName,
                 City = x.City,
@@ -58,6 +59,24 @@ namespace AttendanceManagementSystem.Controllers
             };
             context.Students.Add(student);
             await context.SaveChangesAsync();
+            var subjects = context.CourseSubjects.Where(x => x.CourseId == int.Parse(model.Course)).ToList();
+            subjects.ForEach(x => 
+            {
+                context.StudentSubjects.Add(new StudentSubject 
+                {
+                    StudentId = student.StudentId,
+                    SubjectId = x.SubjectId
+                });                
+            });
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var student = context.Students.Find(id);
+            context.Students.Remove(student);
+            context.SaveChanges();
             return RedirectToAction("Index");
         }
     }
