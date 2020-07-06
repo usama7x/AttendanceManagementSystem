@@ -21,6 +21,7 @@ namespace AttendanceManagementSystem.Data
         public DbSet<Teacher> Teachers { get; set; }        
         public DbSet<TeacherSubject> TeacherSubject { get; set; }
         public DbSet<StudentSubject> StudentSubjects { get; set; }
+        public DbSet<CourseSubject> CourseSubjects { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

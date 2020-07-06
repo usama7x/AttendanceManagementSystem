@@ -30,7 +30,7 @@ namespace AttendanceManagementSystem.Controllers
             return View(subjectView);
         }
 
-        public async Task<IActionResult> Create(SubjectViewModel model)
+        public IActionResult Create(SubjectViewModel model)
         {
             var newSubject = new Subject()
             {
@@ -41,7 +41,10 @@ namespace AttendanceManagementSystem.Controllers
                 CourseName = context.Courses.FindAsync(model.Subject.CourseId).Result.Name,                
             };
             context.Subjects.Add(newSubject);
-            await context.SaveChangesAsync();
+            context.SaveChanges();
+            context.CourseSubjects.Add(new CourseSubject { CourseId = model.Subject.CourseId, SubjectId = newSubject.SubjectId });
+            context.SaveChanges();
+            
             return RedirectToAction("Index");
         }
 

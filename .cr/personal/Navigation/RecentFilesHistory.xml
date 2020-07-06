@@ -2,51 +2,100 @@
 <Root Type="DevExpress.CodeRush.Foundation.Navigation.QuickFileNav.SolutionFileInfosContainer">
   <Options Language="Neutral">
     <Items>
-      <Item Id="{4bdae979-5df5-47c0-a51b-64e7ec819a81}">
-        <Filename>Index.cshtml</Filename>
-        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\teachersubject\index.cshtml</FilePath>
+      <Item Id="{b1f85663-12e1-4dfc-bcec-3802e27a06d6}">
+        <Filename>_ViewStart.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\_viewstart.cshtml</FilePath>
         <Folders>
           <Item>Views</Item>
-          <Item>TeacherSubject</Item>
         </Folders>
         <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
         <ProjectName>AttendanceManagementSystem</ProjectName>
       </Item>
-      <Item Id="{6844ba96-de36-47c4-98df-942082b6936c}">
-        <Filename>Subject.cs</Filename>
-        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\subject.cs</FilePath>
+      <Item Id="{571db9f9-85a6-41e4-ab71-dce98bb55b46}">
+        <Filename>_TeacherView.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\shared\_teacherview.cshtml</FilePath>
+        <Folders>
+          <Item>Views</Item>
+          <Item>Shared</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{9de8ed94-37b8-4267-b7db-e94c3ec93434}">
+        <Filename>_Layout.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\shared\_layout.cshtml</FilePath>
+        <Folders>
+          <Item>Views</Item>
+          <Item>Shared</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{338f8629-0909-4d23-ae47-4edcab1a5acd}">
+        <Filename>_LoginView.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\shared\_loginview.cshtml</FilePath>
+        <Folders>
+          <Item>Views</Item>
+          <Item>Shared</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{0e31b697-4ecb-4b21-9d4b-0d1ef52fbc49}">
+        <Filename>AttendanceController.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\controllers\attendancecontroller.cs</FilePath>
+        <Folders>
+          <Item>Controllers</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{f1d8f162-8dc2-4aa4-a7f8-2849fbb83c31}">
+        <Filename>AttendanceViewModel.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\viewmodels\attendanceviewmodel.cs</FilePath>
+        <Folders>
+          <Item>ViewModels</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+      <Item Id="{5aaa0cc1-4480-4bb7-bd5a-9f81021c49a2}">
+        <Filename>StudentAttendanceViewModel.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\viewmodels\studentattendanceviewmodel.cs</FilePath>
+        <Folders>
+          <Item>ViewModels</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+      </Item>
+      <Item Id="{d3cc558c-c27b-438a-9f90-b218bedd7a67}">
+        <Filename>_TeacherView.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\shared\_teacherview.cshtml</FilePath>
+        <Folders>
+          <Item>Views</Item>
+          <Item>Shared</Item>
+        </Folders>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
+      </Item>
+      <Item Id="{3ece8bdc-73f1-4582-9805-82c17d6161db}">
+        <Filename>Student.cs</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\student.cs</FilePath>
         <Folders>
           <Item>DomainObjects</Item>
         </Folders>
         <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
         <ProjectName>AttendanceManagementSystem.Core</ProjectName>
       </Item>
-      <Item Id="{494c39fc-aaea-4d9d-8198-a17561c8adc8}">
-        <Filename>Teacher.cs</Filename>
-        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
+      <Item Id="{689053fc-2ee3-45e4-b88b-abc41d5750a2}">
+        <Filename>_TeacherView.cshtml</Filename>
+        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem\views\shared\_teacherview.cshtml</FilePath>
         <Folders>
-          <Item>DomainObjects</Item>
+          <Item>Views</Item>
+          <Item>Shared</Item>
         </Folders>
-        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
-        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
-      </Item>
-      <Item Id="{f583b658-a239-40c1-a71a-64bbd65d3881}">
-        <Filename>Teacher.cs</Filename>
-        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
-        <Folders>
-          <Item>DomainObjects</Item>
-        </Folders>
-        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
-        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
-      </Item>
-      <Item Id="{a265b685-bc3c-451e-be5f-1d862f544732}">
-        <Filename>Teacher.cs</Filename>
-        <FilePath>c:\users\usama\source\repos\attendancemanagementsystemlive\attendancemanagementsystem.core\domainobjects\teacher.cs</FilePath>
-        <Folders>
-          <Item>DomainObjects</Item>
-        </Folders>
-        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem.Core\AttendanceManagementSystem.Core.csproj</ProjectFileName>
-        <ProjectName>AttendanceManagementSystem.Core</ProjectName>
+        <ProjectFileName>C:\Users\Usama\source\repos\AttendanceManagementSystemLive\AttendanceManagementSystem\AttendanceManagementSystem.csproj</ProjectFileName>
+        <ProjectName>AttendanceManagementSystem</ProjectName>
       </Item>
     </Items>
   </Options>
