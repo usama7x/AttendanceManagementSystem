@@ -51,8 +51,7 @@ namespace AttendanceManagementSystem.Controllers
                 Course = context.Courses.Where(x => x.CourseId == int.Parse(model.Course)).FirstOrDefault(),
                 Dob = model.Dob,
                 Email = model.Email,
-                FatherName = model.FatherName,
-                Gender = model.Gender,
+                FatherName = model.FatherName,               
                 RollNo = model.RollNo,
                 Stamp = DateTime.Now,
                 Semester = model.Semester               
