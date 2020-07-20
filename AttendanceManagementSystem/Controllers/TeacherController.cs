@@ -37,18 +37,20 @@ namespace AttendanceManagementSystem.Controllers
             var result = await userManager.CreateAsync(teacher, teacher.Password);
             if (result.Succeeded)
             {
+                await userManager.AddToRoleAsync(teacher, "teacher");
                 return RedirectToAction("Index");
             } else
             {
                 return NotFound();
             }
-                
-           
+        }
 
-
-
-
-
+        public IActionResult Delete(int id)
+        {
+            var teacher = context.Teachers.Find(id);
+            context.Teachers.Remove(teacher);
+            context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
